@@ -1,12 +1,88 @@
-# React + Vite
+# 🎬 Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek React.js application to search and explore movies using the OMDb API. Users can search for movies, view search results, and add/remove favorites which persist via localStorage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Real-time movie search using the OMDb API  
+- ❤️ Add and remove favorites  
+- 💾 Favorites saved in browser's localStorage  
+- 🎨 Responsive and modern UI with clean layout  
+- ⚙️ Environment-based API key integration  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Axios** for API calls
+- **OMDb API**
+- **CSS** (custom styling)
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Mandipstha-17/Movie-Search.git
+cd Movie-Search
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Add OMDb API Key
+
+Create a `.env` file in the root folder and add your API key:
+
+```env
+VITE_OMDB_API_KEY=your_api_key_here //  917ce695
+```
+
+> You can get a free OMDb API key from [http://www.omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx)
+
+### 4. Run the App
+
+```bash
+npm run dev
+```
+
+The app will run at `http://localhost:5173`
+
+---
+
+## 📁 Folder Structure
+
+```
+Movie-Search/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── MovieCard.jsx
+│   │   ├── MovieList.jsx
+│   │   ├── FavoritesList.jsx
+│   │   └── SearchBar.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   └── index.js
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+```
+---
+
+## 📌 Notes
+
+- Ensure your OMDb API key is valid or the search will fail.
+- This app stores favorites in the browser, no backend used.
+---
+
